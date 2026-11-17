@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the Worker name in the Cloudflare dashboard (Workers Builds).
+  "name": "mibc-main-website",
+  "compatibility_date": "2026-11-17",
+  // Static-assets-only Worker: serves the Next.js static export in ./out.
+  // Add "main" + bindings here later if backend features are needed.
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true }
+}
