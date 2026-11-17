@@ -53,7 +53,7 @@ npm run brand:assets   # regenerate og.png / icon.png / apple-icon.png / favicon
 
 ## Deployment (GitHub → Cloudflare, automatic)
 
-The GitHub repo `iamtanbin/MIBC-main-website` is connected to Cloudflare **Workers Builds**. Every push to `main` builds and deploys:
+The GitHub repo `iamtanbin/MIBC-main-website` is to be connected to Cloudflare **Workers Builds** (status: PENDING — dashboard connection not yet confirmed; update this line once a push-triggered deploy is verified). Once connected, every push to `main` builds and deploys:
 
 - Worker name: `mibc-main-website` (must equal `name` in `wrangler.jsonc`)
 - Build command: `npm run build`

@@ -575,7 +575,7 @@ main {
 }
 .chip.upcoming {
   background: rgba(22, 163, 74, 0.12);
-  color: #15803d;
+  color: #14532d;
 }
 @media (prefers-color-scheme: dark) {
   .chip.upcoming {

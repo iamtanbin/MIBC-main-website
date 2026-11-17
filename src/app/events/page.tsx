@@ -17,7 +17,10 @@ export default function EventsPage() {
         title="Our events"
         lead="Signature competitions, summits, and programs. Each returns with a new edition, and every edition has its own page."
       />
-      <section className="section container" aria-label="Event list" style={{ paddingTop: 40 }}>
+      <section className="section container" aria-labelledby="event-list" style={{ paddingTop: 40 }}>
+        <h2 id="event-list" className="visually-hidden">
+          All flagship events
+        </h2>
         <ul className="grid grid-3" style={{ listStyle: "none", margin: 0, padding: 0 }}>
           {events.map((e) => (
             <EventCard key={e.slug} event={e} />
